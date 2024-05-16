@@ -1,0 +1,49 @@
+Binary Protocol: Binary protocol is a result of one of the core enhancements to HTTP/2.
+
+HTTP/1.1: Textual protocol, which can be read and interpreted by humans.
+
+HTTP/2: Binary protocol, which is more efficient to parse, more compact in size, and less error-prone.
+
+2. Multiplexing:
+
+HTTP/1.1: Each transfer requires a new TCP connection or uses connection keep-alive, which can still only process one request and response at a time.
+
+HTTP/2: Multiple requests and responses can be sent simultaneously and asynchronously over a single TCP connection. This reduces latency significantly, especially for sites with numerous small resources.
+
+3. Header Compression:
+
+HTTP/1.1: Headers are sent in plain text and can become quite large in size.
+HTTP/2: Employs HPACK compression, which reduces overhead, especially for repetitive headers.
+
+4. Stream Prioritization:
+
+HTTP/1.1: No built-in mechanism for resource prioritization.
+HTTP/2: Allows the client to specify the priority of a request, enabling the server to send the most important resources first.
+
+5. Server Push:
+
+HTTP/1.1: No push capability.
+HTTP/2: Introduces “server push”, where a server can send resources proactively to the client’s cache before the client requests them.
+
+
+Objects and its internal representation in javascript :
+ Objects in JavaScript;
+       *In JavaScript, objects are collections of key-value pairs, where keys are strings (or symbols) and values can be of any data type, including other objects. Objects are used to represent real-world entities, data structures, and more complex data types.
+Ex:
+                                      const person = {
+                                                     name: "Ravi",
+                                                      age: 22,
+                                                      email: "ravivarman6242@gmail.com"
+                                                                  };
+
+Internal Representation of Objects:
+      *Internally, JavaScript engines use various data structures to represent objects efficiently. One common approach is using a hash table or a similar structure to store the object’s properties and their corresponding values. This allows for fast access and manipulation of properties.
+Ex:
+                   
+
+                     Internal Representation:
+                                           {
+                                                     name: "Ravi",
+                                                      age: 22,
+                                                      email: "ravivarman6242@gmail.com"
+                                                                                                            }
